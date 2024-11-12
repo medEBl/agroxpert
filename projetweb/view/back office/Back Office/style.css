@@ -1,0 +1,91 @@
+/* Sidebar styling */
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+}
+
+.sidebar-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.list-group-item {
+    font-weight: 500;
+}
+
+.list-group-item:hover {
+    background-color: #343a40;
+}
+
+/* Page Content Wrapper */
+#page-content-wrapper {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .form-control {
+    border-radius: 0.5rem;
+}
+
+.navbar .btn-primary {
+    border-radius: 0.5rem;
+}
+
+/* Chart Container */
+.card-body canvas {
+    max-height: 400px;
+}
+
+/* Custom Scrollbar for Sidebar */
+#sidebar-wrapper {
+    overflow-y: auto;
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+#sidebar-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#sidebar-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+#sidebar-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Adjust card colors */
+.bg-primary {
+    background-color: #078333d0 !important;
+}
+
+.bg-warning {
+    background-color: #0a8719 !important;
+}
+
+.bg-success {
+    background-color: #0a7a24e3 !important;
+}
+
+.bg-danger {
+    background-color: #054e0a !important;
+}
