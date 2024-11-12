@@ -1,0 +1,267 @@
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+/* Header Styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #539f57;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #a5d6a7;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4edda;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+article h2 {
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+article p {
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.comments {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.comments h3 {
+    color: #333;
+}
+
+.comments form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments textarea {
+    width: 95%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.comments button {
+    align-self: flex-start;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comments button:hover {
+    background-color: #45a049;
+}
+
+.comment-list {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.comment-list p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Bouton de retour en haut */
+#backToTop {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 50px;
+    transition: background-color 0.3s;
+    visibility: visible; /* Assure que le bouton est visible */
+    opacity: 1; /* Assure l'opacité maximale */
+}
+
+#backToTop:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 30px 10%;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    color: #a5d6a7;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #e8f5e9;
+    margin-top: 8px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-top: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #e8f5e9;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #c5e1a5;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #a5d6a7;
+    border-top: 1px solid #a5d6a7;
+    padding-top: 10px;
+}
