@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Back Office - Admin Panel</title>
+    <link rel="stylesheet" href="backi.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Forum Back Office - Admin Panel</h1>
+    </header>
+
+    <main>
+        <h2>Discussion Board</h2>
+
+        <!-- Forum Post Form -->
+        <fieldset>
+            <legend>Post a New Discussion</legend>
+            <form action="#" method="post">
+                <div>
+                    <label for="topic">Topic Title</label>
+                    <input type="text" id="topic" name="topic" placeholder="Enter the topic title" required>
+                </div>
+                <div>
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" rows="5" placeholder="Write your post here..." required></textarea>
+                </div>
+                <button type="submit">Post Discussion</button>
+            </form>
+        </fieldset>
+
+        <!-- Existing Posts with Admin Controls -->
+        <section>
+            <div class="post">
+                <h3>Post Title 1</h3>
+                <p>Posted by User123 on 2024-11-11</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="admin-controls">
+                    <button class="approve-button">Approve</button>
+                    <button class="delete-button">Delete</button>
+                </div>
+            </div>
+            <div class="post">
+                <h3>Post Title 2</h3>
+                <p>Posted by User456 on 2024-11-10</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="admin-controls">
+                    <button class="approve-button">Approve</button>
+                    <button class="delete-button">Delete</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>This forum provides an interactive platform for admins and users to discuss key topics and share feedback.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: support@forum.com</li>
+                    <li>Phone: +1-234-567-890</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="icon-linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Forum | Designed by [Your Name]
+        </div>
+    </footer>
+
+</body>
+
+</html>
