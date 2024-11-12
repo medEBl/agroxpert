@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header de la page -->
+   <!-- Header Section -->
+   <header>
+    <img src="logo.png" alt="logo de site" id="logo">
+    <div class="logo"> AgroXpert</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Market</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+                <a href="#">Meteo</a>
+            </li>
+            <li>
+                <a href="#">Forum</a>
+            </li>
+            <li>
+                <a href="index.html">feedback</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Formulaire de Feedback -->
+    <div class="feedback-form">
+        <form id="feedbackForm">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Note (1 à 5):</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1 - Très mauvais</option>
+                <option value="2">2 - Mauvais</option>
+                <option value="3">3 - Moyen</option>
+                <option value="4">4 - Bon</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="comment">Commentaire:</label>
+            <textarea id="comment" name="comment" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <!-- Footer de la page -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>A community forum for agriculture discussions, insights, and networking.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Market</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li>
+                        <a href="#">Meteo</a>
+                    </li>
+                    <li>
+                        <a href="#">Forum</a>
+                    </li>
+                    <li>
+                        <a href="index.html">feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 AgriForum | Designed by YourCompany
+        </div>
+    </footer>
+
+    
+</body>
+</html>
