@@ -1,21 +1,27 @@
 /* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #a8d5a5; /* Green background */
+    background-color: #a8d5a5;
+    /* Green background */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding-top: 60px; /* Add padding to the top for the fixed navbar */
+    padding-top: 60px;
+    /* Add padding to the top for the fixed navbar */
     font-family: Arial, sans-serif;
     margin: 0;
     background: url('background.png') no-repeat center center fixed;
-    background-size: cover; /* This makes the image cover the entire page */
+    background-size: cover;
+    /* This makes the image cover the entire page */
     padding: 0;
     padding-top: 70px;
 }
-/* Header Styling */
+
+
+/* Header Styles */
 
 header {
     display: flex;
@@ -50,15 +56,20 @@ header nav ul li a {
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s;
+    text-decoration: underline;
 }
 
 header nav ul li a:hover {
     color: #a5d6a7;
 }
+
+
 /* Navigation Bar */
+
 nav {
     width: 100%;
-    background-color: #4caf50; /* Dark green background */
+    background-color: #4caf50;
+    /* Dark green background */
     padding: 10px;
     position: fixed;
     top: 0;
@@ -92,20 +103,27 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+
 /* Section styles */
+
 section {
-    padding: 40px 20px; /* Added padding for all sections */
+    padding: 40px 20px;
+    /* Added padding for all sections */
     width: 100%;
     text-align: center;
 }
 
+
 /* Home Section */
+
 #home {
     background-color: #ffffff;
     padding: 40px;
 }
 
+
 /* Weather Widget styles */
+
 .weather-container {
     display: flex;
     justify-content: center;
@@ -166,5 +184,81 @@ section {
 .alert {
     margin-top: 15px;
     padding: 10px;
-    background-color: #
+    background-color: white
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 30px 10%;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    color: #a5d6a7;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #e8f5e9;
+    margin-top: 8px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-top: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #e8f5e9;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #c5e1a5;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #a5d6a7;
+    border-top: 1px solid #a5d6a7;
+    padding-top: 10px;
 }
