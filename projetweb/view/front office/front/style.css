@@ -1,0 +1,196 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #539f57;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #a5d6a7;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 30px 10%;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    color: #a5d6a7;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #e8f5e9;
+    margin-top: 8px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-top: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #e8f5e9;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #c5e1a5;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #a5d6a7;
+    border-top: 1px solid #a5d6a7;
+    padding-top: 10px;
+}
+/* Formulaire de Feedback */
+.feedback-form {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+.feedback-form label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}
+
+#logo{
+    width: 100px;
+}
