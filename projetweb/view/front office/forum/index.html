@@ -12,7 +12,7 @@
     <!-- Header Section -->
     <header>
         <img src="logox.png" alt="logo de site" id="logox">
-        <div class="logo"> AgroXpert</div>
+        <div class="logo">AgroXpert</div>
         <nav>
             <ul>
                 <li><a href="..\home\home.html">Home</a></li>
@@ -50,14 +50,21 @@
             <h3>Discussion Topic 1</h3>
             <p class="author">Posted by User1</p>
             <p class="excerpt">Brief topic description or message preview...</p>
+            <div class="full-thread" style="display:none;">
+                <p>This is the full content of the thread for Topic 1...</p>
+            </div>
             <button class="view-thread">View Thread</button>
+            <button class="view-comments">View Comments</button>
 
-            <div class="comment-form">
-                <h4>Add a Comment</h4>
-                <form action="#" method="post">
-                    <textarea placeholder="Your comment..."></textarea>
-                    <button type="submit">Comment</button>
-                </form>
+            <div class="comments-section" style="display:none;">
+                <h4>Comments:</h4>
+                <div class="comment-form">
+                    <h4>Add a Comment</h4>
+                    <form action="#" method="post">
+                        <textarea placeholder="Your comment..."></textarea>
+                        <button type="submit">Comment</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -66,17 +73,26 @@
             <h3>Discussion Topic 2</h3>
             <p class="author">Posted by User2</p>
             <p class="excerpt">Brief topic description or message preview...</p>
+            <div class="full-thread" style="display:none;">
+                <p>This is the full content of the thread for Topic 2...</p>
+            </div>
             <button class="view-thread">View Thread</button>
+            <button class="view-comments">View Comments</button>
 
-            <div class="comment-form">
-                <h4>Add a Comment</h4>
-                <form action="#" method="post">
-                    <textarea placeholder="Your comment..."></textarea>
-                    <button type="submit">Comment</button>
-                </form>
+            <div class="comments-section" style="display:none;">
+                <h4>Comments:</h4>
+                <div class="comment-form">
+                    <h4>Add a Comment</h4>
+                    <form action="#" method="post">
+                        <textarea placeholder="Your comment..."></textarea>
+                        <button type="submit">Comment</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer Section -->
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -113,6 +129,9 @@
             &copy; 2023 AgriForum | Designed by YourCompany
         </div>
     </footer>
+
+    <!-- Script Section -->
+    <script src="script.js"></script>
 </body>
 
 </html>
