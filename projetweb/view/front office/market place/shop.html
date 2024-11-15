@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <header>
+        <img src="logox.png" alt="logo de site" id="logox">
+        <div class="logo"> AgroXpert</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Market</a></li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <a href="#">Meteo</a>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                </li>
+                <li>
+                    <a href="#">feedback</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+   <!-- <div class="header-banner">
+        <h1>Marketplace</h1>
+    </div>   -->
+
+    <!-- Category Filter Dropdown -->
+    <div class="filter-container">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterByCategory()">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home</option>
+            <!-- Add more categories as needed -->
+        </select>
+    </div>
+
+    <!-- Marketplace Grid -->
+    <div class="marketplace">
+        <div class="product-card" data-id="1" data-name="Product 1" data-price="25.99" data-category="electronics">
+            <img src="esprit.png" alt="Product 1">
+            <h3>Miel de Montagne</h3>
+            <p class="category">Category: Electronics</p>
+            <p>Miel de haute qualité, récolté en pleine nature.</p>
+            <div class="price">$25.99</div>
+            <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="2" data-name="Carottes Bio" data-price="35.99" data-category="fashion">
+            <img src="esprit.png" alt="Carottes Bio">
+            <h3>Carottes Bio</h3>
+            <p class="category">Category: Fashion</p>
+            <p>Des carottes fraîches et bio.</p>
+            <div class="price">$35.99</div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="3" data-name="Jus de Pomme Bio" data-price="37.99" data-category="fashion">
+            <img src="esprit.png" alt="Jus de Pomme Bio">
+            <h3>Jus de Pomme Bio</h3>
+            <p class="category">Category: Fashion</p>
+            <p>Un jus de pomme pressé à froid, 100% bio, sans conservateurs ni sucres ajoutés.</p>
+            <div class="price">$37.99</div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="4" data-name="Kit de Culture de Champignons" data-price="38.99" data-category="fashion">
+            <img src="esprit.png" alt="Kit de Culture de Champignons">
+            <h3>Kit de Culture de Champignons</h3>
+            <p class="category">Category: Fashion</p>
+            <p>Kit complet pour cultiver vos propres champignons frais à la maison. Idéal pour les amateurs de cuisine et de jardinage.</p>
+            <div class="price">$38.99</div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="5" data-name="Herbes Aromatiques Bio" data-price="38.99" data-category="fashion">
+            <img src="esprit.png" alt="Herbes Aromatiques Bio">
+            <h3>Herbes Aromatiques Bio</h3>
+            <p class="category">Category: Fashion</p>
+            <p>Un assortiment de basilic, thym, et romarin frais pour parfumer vos plats.</p>
+            <div class="price">$38.99</div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="6" data-name="Barres Énergétiques Bio" data-price="38.99" data-category="fashion">
+            <img src="esprit.png" alt="Product 6">
+            <h3>Barres Énergétiques Bio</h3>
+            <p class="category">Category: Fashion</p>
+            <p>Des barres énergétiques saines et naturelles, idéales pour un coup de boost en journée.</p>
+            <div class="price">$38.99</div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="6" data-name="Graines de Plantes Aromatiques" data-price="38.99" data-category="fashion">
+            <img src="esprit.png" alt="Graines de Plantes Aromatiques">
+            <h3>Graines de Plantes Aromatiques</h3>
+            <p class="category">Category: Fashion</p>
+            <p>Des barres énergétiques saines et naturelles, idéales pour un coup de boost en journée.</p>
+            <div class="price">$38.99</div>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <!-- Add more product cards with different categories as needed -->
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="total">Total: $<span id="total-price">0.00</span></div>
+    </div>
+
+    <script src="shop.js"></script>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>A community forum for agriculture discussions, insights, and networking.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Market</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li>
+                        <a href="#">Meteo</a>
+                    </li>
+                    <li>
+                        <a href="#">Forum</a>
+                    </li>
+                    <li>
+                        <a href="#">feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 AgriForum | Designed by YourCompany
+        </div>
+    </footer>
+
+</body>
+</html>
